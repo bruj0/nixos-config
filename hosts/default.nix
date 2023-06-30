@@ -144,6 +144,7 @@ in
       host = {
         hostName = "vm";
         mainMonitor = "Virtual-1";
+        secondMonitor = "Virtual-2";
       };
     };
     modules = [
@@ -158,6 +159,7 @@ in
           host = {
             hostName = "vm";
             mainMonitor = "Virtual-1";
+            secondMonitor = "Virtual-2";
           };
         };
         home-manager.users.${user} = {

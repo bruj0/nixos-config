@@ -67,7 +67,7 @@
 
   outputs = inputs @ { self, nixpkgs, nixpkgs-unstable, home-manager, darwin, nur, nixgl, dslr, doom-emacs, hyprland, plasma-manager, ... }:   # Function that tells my flake which to use and what do what to do with the dependencies.
     let                                                                     # Variables that can be used in the config files.
-      user = "matthias";
+      user = "bruj0";
       location = "$HOME/.setup";
     in                                                                      # Use above variables in ...
     {

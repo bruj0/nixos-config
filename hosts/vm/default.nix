@@ -17,18 +17,19 @@
 {
   imports =  [                                  # For now, if applying to other system, swap files
     ./hardware-configuration.nix                # Current system hardware config @ /etc/nixos/hardware-configuration.nix
-    ../../modules/desktop/bspwm/default.nix     # Window Manager
+    ../../modules/desktop/kde/default.nix     # Window Manager
   ];
 
   boot = {                                      # Boot options
     kernelPackages = pkgs.linuxPackages_latest;
 
     loader = {                                  # For legacy boot
-      grub = {
+      systemd-boot = {
         enable = true;
-        device = "/dev/sda";                    # Name of hard drive (can also be vda)
+        configurationLimit = 5;                 # Limit the amount of configurations
       };
-      timeout = 1;                              # Grub auto select timeout
+      efi.canTouchEfiVariables = true;
+      timeout = 1;                              # Grub auto select time
     };
   };
 
