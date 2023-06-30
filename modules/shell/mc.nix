@@ -3,9 +3,7 @@
 #
 
 {
-  programs = {
-    mc = {
-      enable = true;
-    };
-  };
+    environment.systemPackages = [
+    pkgs.mc
+  ];
 }
