@@ -13,6 +13,7 @@
 [
   ./nvim
   ./vscode.nix
+  ./joe.nix
   #./emacs/doom-emacs
 ]
 
