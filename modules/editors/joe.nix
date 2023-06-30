@@ -1,5 +1,5 @@
 { config, pkgs, lib, ... }:
 {
-	environment.systemPackages = with pkgs; [ vscode ];
+	environment.systemPackages = with pkgs; [ joe ];
 }
 
