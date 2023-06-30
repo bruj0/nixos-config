@@ -11,8 +11,8 @@
 #
 
 [
-  #./nvim
-  ./vscode
+  ./nvim
+  ./vscode.nix
   #./emacs/doom-emacs
 ]
 
