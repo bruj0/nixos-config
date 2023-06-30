@@ -15,4 +15,5 @@
   ./zsh.nix
   ./direnv.nix
   ./mc.nix
+  ./fish.nix
 ]

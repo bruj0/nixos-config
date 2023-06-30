@@ -4,6 +4,6 @@
 { config, pkgs, lib, ... }:
 {
     environment.systemPackages = [
-    pkgs.mc
+    pkgs.fish
   ];
 }
