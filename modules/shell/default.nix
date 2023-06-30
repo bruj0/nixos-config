@@ -16,4 +16,5 @@
   ./direnv.nix
   ./mc.nix
   ./fish.nix
+  ./konsole.nix
 ]
